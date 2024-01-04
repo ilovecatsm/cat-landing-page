@@ -8,6 +8,28 @@ body {
     line-height: 32px;
     background: #faf9f6;
 }
+/* ===== Scrollbar CSS ===== from https://codepen.io/stephenpaton-tech/full/JjRvGmY */ 
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #9670B5 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #9670B5;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
 /* changes the color of the highlighted text */
 ::selection {
     color: #541d82;
@@ -122,7 +144,7 @@ h2 {
 }
 /* testimonials sect */
 .bg {
-    background-color: #c28dee3a;
+    background-color: #af76de4a;
 }
 .testimonials {
     display: flex;
@@ -131,7 +153,7 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
-    margin: 20px;
+    margin: 20px 20px 0 20px;
     padding: 20px;
 }
 h1 {
@@ -140,16 +162,52 @@ h1 {
     margin: 10px;
     padding: 30px;
 }
+.test-text-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-left: 5rem;
+    margin-bottom: 15rem;
+    justify-content: center;
+    align-items: center;
+}
+.test-text-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-left: 5rem;
+    margin-bottom: 15rem;
+}
 .test-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 450px;
     height: 450px;
     object-fit: cover;
-    padding: 45px;
+    padding: 45px 45px auto auto;
 }
-.test-sect-1, .test-sect-2 {
+.test-sect-1 {
     display: flex;
     font-size: 24px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+    color: white;
+}
+.test-sect-2 img {
+    margin-left: 6rem;
+}
+.test-sect-2 {
+    display: flex;
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+    color: white;
+    flex-direction: row-reverse;
 }
 .testimonials ul {
     list-style: none;
@@ -167,6 +225,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    padding: 20px;
 }
 .links {
     display: flex;
