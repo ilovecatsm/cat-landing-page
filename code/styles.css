@@ -46,6 +46,25 @@ body {
 .hero-container a {
     text-decoration: none;
     color: white;
+    display: inline-block;
+    position: relative;
+}
+.hero-container a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #af76de;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+/* hover code thanks to https://www.30secondsofcode.org/css/s/hover-underline-animation/ */
+.hero-container a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 .logo-text {
     font-size: 30px;
@@ -103,6 +122,10 @@ h2 {
     width: 200px;
     border-radius: 15px;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.button:hover {
+    transform: scale(1.2);
 }
 /* about sect */
 .info-container {
@@ -118,6 +141,12 @@ h2 {
     width: 400px;
     height: auto;
     border-radius: 10px;
+    transition: box-shadow .3s;
+    transition: 0.5s ease;
+}
+.imgg:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.5);
+    transform: scale(1.1);
 }
 .img-cont {
     display: flex;
@@ -161,6 +190,7 @@ h1 {
     color: white;
     margin: 10px;
     padding: 30px;
+    padding-top: 5rem;
 }
 .test-text-1 {
     display: flex;
