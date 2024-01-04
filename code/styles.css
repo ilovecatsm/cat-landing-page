@@ -1,8 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
     font-family:'Segoe UI', Verdana, sans-serif;
     line-height: 32px;
+    background: #faf9f6;
 }
 /* changes the color of the highlighted text */
 ::selection {
@@ -115,4 +119,62 @@ h2 {
     width: 400px;
     height: auto;
     text-align: center;
+}
+/* testimonials sect */
+.bg {
+    background-color: #c28dee3a;
+}
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: white;
+    margin: 10px;
+    padding: 30px;
+}
+.test-img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    padding: 45px;
+}
+.test-sect-1, .test-sect-2 {
+    display: flex;
+    font-size: 24px;
+    text-align: center;
+}
+.testimonials ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#af76de;
+    font-size: 24px;
+}
+/* footer section */
+footer {
+    background-color: #9670B5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.links {
+    display: flex;
+    gap: 2rem;
+}
+.links a {
+    color: white;
+}
+footer p {
+    font-size: 18px;
 }
