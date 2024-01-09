@@ -1,6 +1,8 @@
 # cat-landing-page
 flex practice :)))
 
+a link to the live code: https://codepen.io/ilovecatsm/pen/VwRjbxb
+
 all photos from pexels.com
 
 links in order of use 
